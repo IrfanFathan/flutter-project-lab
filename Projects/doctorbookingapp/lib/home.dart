@@ -9,7 +9,11 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: header(),
+      body: Column(
+        children: [
+          header(),
+        ],
+      ),
     );
   }
 }
