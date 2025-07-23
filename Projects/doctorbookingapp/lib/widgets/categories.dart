@@ -6,10 +6,11 @@ class Category extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Padding(
           padding: EdgeInsets.only(top: 16, left: 16),
-          child: Text("Category", style: TextStyle(fontSize: 28)),
+          child: Text("Category", style: TextStyle(fontSize: 28,fontWeight: FontWeight.w500)),
         ),
       ],
     );
