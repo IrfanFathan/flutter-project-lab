@@ -2,9 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class header extends StatelessWidget {
-  const header({
-    super.key,
-  });
+  const header({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -27,12 +25,17 @@ class header extends StatelessWidget {
               Container(
                 width: 50,
                 height: 50,
-    
+
                 decoration: BoxDecoration(
                   color: Colors.white.withOpacity(0.1),
                   borderRadius: BorderRadius.circular(15),
                 ),
-                child: SvgPicture.network('https://tse1.explicit.bing.net/th/id/OIP.ji80d84EBCESSMv_YykR2AHaJI?r=0&rs=1&pid=ImgDetMain&o=7&rm=3',fit: BoxFit.none,),
+                child: SvgPicture.asset(
+                  "assets/vectors/notification.svg",
+                  color: Colors.white,
+                  width: 25,
+                  height: 25,
+                ),
               ),
             ],
           ),
