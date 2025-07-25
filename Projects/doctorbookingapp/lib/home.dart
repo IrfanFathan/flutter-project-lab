@@ -8,15 +8,11 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.white,
-      body: Column(
-        children: [
-          header(),Category()
-        ],
-      ),
-    );
+    return
+      Scaffold(
+        backgroundColor: Colors.white,
+        body: Column(children: [header(), Category()]),
+      );
+
   }
 }
-
-

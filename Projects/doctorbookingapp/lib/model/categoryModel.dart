@@ -1,12 +1,18 @@
-class categoryModel {
+
+
+class CategoryModel {
   String vector;
-  bool isSeleated;
-  categoryModel({required this.vector, required this.isSeleated});
+  bool isSelected;
+  CategoryModel({required this.vector, required this.isSelected});
+
+
 }
-List<categoryModel> getCategory(){
-  List<categoryModel> category=[];
-  category.add(categoryModel(vector: 'assets/vectors/doctor.svg', isSeleated: false));
-  category.add(categoryModel(vector: 'assets/vectors/hospital.svg', isSeleated: false));
-  category.add(categoryModel(vector: 'assets/vectors/clinic.svg', isSeleated: false));
+List<CategoryModel> getCategory(){
+  List<CategoryModel> category=[];
+  category.add(CategoryModel(vector: 'assets/images/icons/blood-1.svg', isSelected: false));
+  category.add(CategoryModel(vector: 'assets/images/icons/nose.svg', isSelected: false));
+  category.add(CategoryModel(vector: 'assets/images/icons/bone.svg', isSelected: false));
+  category.add(CategoryModel(vector: 'assets/images/icons/liver.svg', isSelected: false));
+  category.add(CategoryModel(vector: 'assets/images/icons/lung.svg', isSelected: false));
   return category;
 }
