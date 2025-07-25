@@ -1,9 +1,10 @@
+import 'package:doctorbookingapp/model/categoryModel.dart';
 import 'package:flutter/material.dart';
 
 class Category extends StatelessWidget {
-  const Category({super.key});
+  Category({super.key});
 
-  get itemCount => null;
+  final List<CategoryModel> CategoryData = getCategory();
 
   @override
   Widget build(BuildContext context) {
@@ -18,12 +19,32 @@ class Category extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 20),
-        ListView.separated(
-          itemBuilder: (context,index){
-
-          },
-          separatorBuilder: (context,index)=>,
-          itemCount: itemCount,
+        SizedBox(
+          height: 80,
+          child: ListView.separated(
+            scrollDirection: Axis.horizontal,
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            itemCount: CategoryData.length,
+            itemBuilder: (context, index) {
+              final item = CategoryData[index];
+              return Column(
+                children: [
+                  Container(
+                    width: 50,
+                    height: 50,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: item.isSelected ? const Color(0xff51a8ff) : Colors.white,
+                    ),
+                    child: Icon(item.icon, color: item.isSelected ? Colors.white : Colors.black),
+                  ),
+                  const SizedBox(height: 4),
+                  Text(item.name, style: const TextStyle(fontSize: 12)),
+                ],
+              );
+            },
+            separatorBuilder: (context, index) => const SizedBox(width: 10),
+          ),
         ),
       ],
     );
