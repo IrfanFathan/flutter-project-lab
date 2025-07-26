@@ -16,9 +16,17 @@ class Doctormodel {
   });
 
   static List<Doctormodel> getDoctores() {
-    List <Doctormodel> Doctors=[];
+    List<Doctormodel> Doctors = [];
     Doctors.add(
-      Doctormodel(name: 'Dr. Anaya Verghese', image: image, imageBox: imageBox, score: score, specialize: specialize)
-    )
+      Doctormodel(
+        name: 'Dr. Anaya Verghese',
+        image: 'assets/images/doctors/Dr. Anaya Verghese.png',
+        imageBox: Color(0xffFFA340),
+        score: 9.88,
+        specialize: ['Cardiology, Internal Medicine, Preventive Care'],
+      ),
+    );
+
+    Doctors.add(Doctormodel(name: 'Dr. Arjun Desai', image: 'assets/images/doctors/Dr. Arjun Desai.png', imageBox: imageBox, score: score, specialize: specialize))
   }
 }
