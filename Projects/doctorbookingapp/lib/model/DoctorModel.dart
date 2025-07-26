@@ -27,6 +27,14 @@ class Doctormodel {
       ),
     );
 
-    Doctors.add(Doctormodel(name: 'Dr. Arjun Desai', image: 'assets/images/doctors/Dr. Arjun Desai.png', imageBox: imageBox, score: score, specialize: specialize))
+    Doctors.add(
+      Doctormodel(
+        name: 'Dr. Arjun Desai',
+        image: 'assets/images/doctors/Dr. Arjun Desai.png',
+        imageBox: Color(0xffFFA340),
+        score: 7.89,
+        specialize: ['Pediatrics, Child Care, Immunization'],
+      ),
+    );
   }
 }
