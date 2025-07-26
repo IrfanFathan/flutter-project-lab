@@ -8,11 +8,11 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return
-      Scaffold(
+    return SafeArea(
+      child: Scaffold(
         backgroundColor: Colors.white,
         body: Column(children: [header(), Category()]),
-      );
-
+      ),
+    );
   }
 }
