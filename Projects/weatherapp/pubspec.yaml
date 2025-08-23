@@ -21,13 +21,11 @@ version: 1.0.0+1
 environment:
   sdk: ^3.8.1
 
-# Dependencies specify other packages that your package needs in order to work.
-# To automatically upgrade your package dependencies to the latest versions
-# consider running `flutter pub upgrade --major-versions`. Alternatively,
-# dependencies can be manually updated by changing the version numbers below to
-# the latest version available on pub.dev. To see which dependencies have newer
-# versions available, run `flutter pub outdated`.
+
+
 dependencies:
+# updates the packages in here 
+  flutter_native_splash: ^2.4.6
   flutter:
     sdk: flutter
 
@@ -78,10 +76,7 @@ flutter:
       fonts:
         - asset: assets/fonts/IBMPlexMono-Regular.ttf
         - asset: assets/fonts/IBMPlexMono-Italic.ttf
-          style: italic
         - asset: assets/fonts/IBMPlexMono-Bold.ttf
-          weight: 700
-          style: bold
         - asset: assets/fonts/IBMPlexMono-Medium.ttf
 
 
