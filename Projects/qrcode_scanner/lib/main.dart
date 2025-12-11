@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 void main(){
   runApp(MyApp());
 }
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget {
       title:'QR code scanner',
       home:Scaffold
       (
-
+        body:homeScreen()
       )    );
   }
 }
